@@ -127,3 +127,11 @@
 .split-detail>.section-intro + .small-note{margin:-8px 0 16px;max-width:680px;line-height:1.65}
 @media(max-width:800px){.scenario-row{grid-template-columns:1.1fr .55fr .8fr .8fr .8fr;font-size:10px}}
 @media(max-width:560px){.scenario-row{grid-template-columns:1fr}.hound-art img{max-height:300px}}
+
+.comparable-basket{margin-top:32px;padding-top:28px;border-top:1px solid var(--border)}
+.compare-table{border:1px solid var(--border);background:#0c1622}
+.compare-row{display:grid;grid-template-columns:1fr auto;gap:20px;padding:11px 15px;border-bottom:1px solid var(--border);font-size:11px;color:#b7c4d2}
+.compare-row:last-child{border-bottom:0}
+.compare-row.head{font-size:8px;letter-spacing:.1em;color:#8797a8;font-weight:800;background:#111d2a}
+.compare-row strong{color:#e8dfd0}
+.compare-row.total{background:rgba(220,183,120,.07);font-weight:800}
