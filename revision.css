@@ -115,3 +115,15 @@
   .persona-grid,.split-detail{display:block!important}
   .persona-card,.value-card,.evidence-grid article,.market-scale-grid article,.kpi-grid article,.finance-model article,.budget-grid,.detail-table{background:#fff!important;color:#111!important;border-color:#ccc!important;break-inside:avoid}
 }
+
+/* Follow-up visual/alignment fixes — 2026-10-28 */
+.scenario-row{grid-template-columns:1.15fr .65fr .9fr .9fr .9fr}
+.hound-art{margin:16px 0 18px;border:1px solid var(--border);background:#08111b;padding:10px;display:flex;justify-content:center}
+.hound-art img{display:block;width:100%;max-height:420px;object-fit:contain;border-radius:2px}
+.origin-tag{display:inline-flex;align-items:center;gap:6px}
+.province-logo{width:24px;height:24px;object-fit:contain;border-radius:50%}
+.tool-pills li{display:inline-flex;align-items:center;gap:8px}
+.tool-logo{width:18px;height:18px;object-fit:contain;border-radius:4px;background:#fff;padding:1px}
+.split-detail>.section-intro + .small-note{margin:-8px 0 16px;max-width:680px;line-height:1.65}
+@media(max-width:800px){.scenario-row{grid-template-columns:1.1fr .55fr .8fr .8fr .8fr;font-size:10px}}
+@media(max-width:560px){.scenario-row{grid-template-columns:1fr}.hound-art img{max-height:300px}}
