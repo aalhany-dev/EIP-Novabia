@@ -17,21 +17,29 @@
 
 The portal is **not** a guaranteed return, securities offer, audited sales report or proof of product-market fit. Current business status: **pre-revenue** with a **playable development prototype**.
 
-## Portal navigation
+## Canonical URLs, QR codes and indexing
 
-The current site uses seven tabs; the URL fragments are deep links for investors, **not independent sitemap entries**:
+All seven sections are now **separate HTML pages**, not JavaScript hash tabs.
 
-- https://eip.novabia.dev/#overview — investment thesis and project positioning
-- https://eip.novabia.dev/#product — game mechanics and the **Ahmed persona** (not in Market)
-- https://eip.novabia.dev/#market — curated comparables, buyer hypotheses and market caveats
-- https://eip.novabia.dev/#economics — interactive scenario calculations, waterfall and use-of-funds
-- https://eip.novabia.dev/#roadmap — 18-month milestones, measurable outputs and optionality
-- https://eip.novabia.dev/#tools — production toolkit, creative direction and AI provenance plans
-- https://eip.novabia.dev/#investors — investor opportunity, contact, returns, diligence and risk matrix
+| Section | Canonical URL | Source |
+| --- | --- | --- |
+| Investor Overview | https://eip.novabia.dev/ | `index.html` |
+| The Game / Ahmed persona | https://eip.novabia.dev/product/ | `product/index.html` |
+| Market & comparables | https://eip.novabia.dev/market/ | `market/index.html` |
+| Economics / interactive calculator | https://eip.novabia.dev/economics/ | `economics/index.html` |
+| Milestones / roadmap | https://eip.novabia.dev/roadmap/ | `roadmap/index.html` |
+| Tools & AI transparency | https://eip.novabia.dev/tools/ | `tools/index.html` |
+| Investor Room / return illustrations / risks | https://eip.novabia.dev/investors/ | `investors/index.html` |
 
-Nested anchor links work via the client router: `#comparable-basket`, `#market-methodology`, `#validation-gates`, `#ai-transparency`, `#return-scenarios`, `#risk-register`.
+**Print/QR policy:** Use the canonical HTTPS URL with a final slash and **no `#` tab fragment**. The previous `#product`, `#market`, `#economics`, etc. routes have deliberately not been preserved because no EIP QR codes were submitted or printed before this migration. Investor/contact QR codes should point to `https://eip.novabia.dev/investors/`. QR codes for the playable build belong at `https://play.novabia.dev/`.
 
-**QR rule:** For detailed investor information, route QR codes to the relevant EIP tab; the final investor/contact call-to-action should use `https://eip.novabia.dev/#investors`. Do not label `play.novabia.dev` as the investor-information destination.
+Real content is in each page's HTML, with its own title, description, canonical URL and navigation. `#main` remains only as an accessibility skip-link target, not an EIP route.
+
+- `sitemap.xml` contains the seven real URLs on `eip.novabia.dev`.
+- `robots.txt` points to the canonical EIP sitemap.
+- The Search Console `novabia.dev` Domain Property covers the subdomain; submit `https://eip.novabia.dev/sitemap.xml`.
+- Each new EIP page needs a direct URL, indexable HTML, unique metadata, sitemap entry and navigation link.
+- Do not publish phantom URLs, stale hash-route links, invented business performance, fake release dates or unverified structured-data ratings.
 
 ## Editorial and financial accuracy
 
@@ -87,28 +95,20 @@ Preserve player-facing origin symbols:
 
 A province emblem and an Honor Medal reward are **not** the same thing as these origin identity symbols. The explanatory HTML comment lives above the origin cards in `index.html`.
 
-## Source files
+## Source files and responsibilities
 
-- `index.html`: Seven-tab investor content, scenarios, risk register and contact.
-- `styles.css`: Base design system.
-- `revision.css`: Subsequent updates and responsive layouts.
-- `script.js`: Tab/deep-link routing, illustrative economy calculator, evolution prototype and print action.
-- `robots.txt`, `sitemap.xml`: Crawl discovery for **eip.novabia.dev only**.
-- `CNAME`: Host binding for GitHub Pages.
-- `favicon.png`: Brand icon.
+- `index.html`: Investor overview and navigation; not a container for the other six sections.
+- `product/index.html`: The game, Ahmed persona, origins and interactive Heir/Tutor example.
+- `market/index.html`: Third-party comparables, market figures, methodology and research measurements.
+- `economics/index.html`: Budget, investor waterfall, interactive assumptions, financial scenarios and allocations.
+- `roadmap/index.html`: Production timeline, measurable gates and planned content architecture.
+- `tools/index.html`: Toolkit and human-led AI/asset provenance disclosures.
+- `investors/index.html`: Investor returns, partnership options, diligence checklists and risk matrix.
+- `styles.css`: Shared visual system, mobile layout and printing.
+- `revision.css`: Refinements, risk matrix, illustrations and response styling.
+- `script.js`: Mobile navigation, **page-scoped** evolution example, **page-scoped** calculator, and Investor Room print control; it does **not** implement tab routing.
+- `robots.txt`, `sitemap.xml`: Crawl discovery for EIP host only.
+- `CNAME`, `favicon.png`: GitHub Pages custom domain and brand icon.
 
-The EIP site uses one static HTML document; its `#` fragments share the same canonical URL. Do not add fragment URLs to the sitemap. A future conversion to independent pages would need separately rendered HTML and metadata, just as the main site now has.
+The EIP site has independent pages. Always edit the section's own `index.html` rather than adding content to a hidden homepage tab.
 
-## Publishing and change checklist
-
-1. Back up the current `main` branch before significant edits.
-2. Update all repeated values consistently (price, unit labels, salary and fund allocation, contact information).
-3. Keep the **10-slide live pitch** separate from this longer investor portal and its optional five supporting slides.
-4. Confirm the ten-title basket appears once, price basket appears once, correct artwork loads, and the waterfall matches the assumptions.
-5. Test direct `/#... ` URLs, deep links, mobile and interactive calculator values; distinguish the published website from the Godot build.
-6. Submit `https://eip.novabia.dev/sitemap.xml` independently through Search Console as appropriate; a Domain Property can cover the subdomain.
-7. Do not silently upgrade planned concepts, projected reach or scenario figures into factual traction.
-
-**Backup examples:** `backup/pre-major-eip-revision-2026-10-27`, `backup/pre-investor-diligence-update-2026-10-30`, `backup/pre-persona-and-return-rebalance-2026-10-30`.
-
-© 2026 Novabia. All rights reserved.
