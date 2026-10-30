@@ -10,7 +10,10 @@ const menuToggle = document.getElementById('menuToggle');
 
 function showPage() {
   const requested = decodeURIComponent(location.hash.slice(1));
-  const active = TABS.includes(requested) ? requested : 'overview';
+  // Nested diligence anchors inherit their parent top-level tab.
+  const anchor = document.getElementById(requested);
+  const ancestorPage = anchor && anchor.closest('main > .page');
+  const active = TABS.includes(requested) ? requested : (ancestorPage ? ancestorPage.id : 'overview');
 
   pages.forEach(page => { page.hidden = page.id !== active; });
   tabLinks.forEach(link => {
@@ -23,7 +26,11 @@ function showPage() {
 
   nav.classList.remove('open');
   menuToggle.setAttribute('aria-expanded', 'false');
-  window.scrollTo({ top: 0, behavior: 'instant' });
+  if (ancestorPage && requested !== active) {
+    requestAnimationFrame(() => anchor.scrollIntoView({ behavior: 'instant', block: 'start' }));
+  } else {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }
   document.title = `${({overview:'Overview', product:'The Game', market:'Audience', economics:'Economics', roadmap:'Milestones', tools:'Tools & Workflow', investors:'Investor Room'})[active]} | Novabia EIP`;
 }
 window.addEventListener('hashchange', showPage);
