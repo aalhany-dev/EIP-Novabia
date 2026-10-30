@@ -1,149 +1,114 @@
 # Novabia EIP — Investor & Economic Portal
 
-Public investor portal for **https://eip.novabia.dev/**, deployed from GitHub Pages.
+**Live:** https://eip.novabia.dev/  
+**Repository:** https://github.com/aalhany-dev/EIP-Novabia  
+**Purpose:** Transparent, supporting information for prospective Novabia investors and partners. The presentation stays concise; this portal houses deeper product, market, economic, roadmap, diligence and production documentation.
 
-## Current revision — 27 October 2026
+## Responsibilities and boundaries
 
-The portal was substantially rebuilt after the EIP investor-readiness discussions.
+| Domain | Repository | Responsible for |
+| --- | --- | --- |
+| `novabia.dev` | `aalhany-dev/Novabia` | Public game identity, narrative, gameplay, origins, companions, legal pages, player acquisition |
+| `play.novabia.dev` | `aalhany-dev/Play-Novabia` | Playable Godot browser prototype |
+| `eip.novabia.dev` | `aalhany-dev/EIP-Novabia` | Investor thesis, opportunities, caveats, budget, proposed financing, risks and supporting diligence |
 
-### Current investor narrative
+**Investor email:** `invest.in@novabia.dev`. Do not restore the prior personal email.  
+**Audience-facing support:** `support@novabia.dev`.
 
-- **Why me:** founder execution already demonstrated through a playable build; funding scales the project into a small distributed studio.
-- **Why this:** creature collection is combined with care, story and branching companion development so the player helps shape what companions become.
-- **Why now:** the playable foundation is ready for external measurement; the next competitive advantage is audience evidence, wishlists, community and commercial learning before full content scaling.
-- **Player persona:** Ahmed — a PC player who values gameplay, story, world-building and many companions he can care about.
-- **Problem:** creature collecting can become transactional and optimization-led after acquisition.
-- **Solution:** care, narrative context, branching development and player choices aim to turn collection into personal history and attachment.
+The portal is **not** a guaranteed return, securities offer, audited sales report or proof of product-market fit. Current business status: **pre-revenue** with a **playable development prototype**.
 
-### Story values now presented explicitly
+## Portal navigation
 
-- **Elemental:** environmental responsibility.
-- **Landscape:** the consequences of war continue after battle.
-- **Kinetic:** local honor can create wider strategic harm when the bigger picture is ignored.
-- **Crossroads:** ignored suffering can generate resentment, extremism and future conflict.
-- **Fantasy:** individual behavior should not be generalized to an entire group.
-- **Gear/progression:** knowledge, education, music, medicine, skills and certificates are meaningful forms of strength.
-- **Whole-game theme:** caring for humans and companions.
+The current site uses seven tabs; the URL fragments are deep links for investors, **not independent sitemap entries**:
 
-### Commercial model now presented
+- https://eip.novabia.dev/#overview — investment thesis and project positioning
+- https://eip.novabia.dev/#product — game mechanics and the **Ahmed persona** (not in Market)
+- https://eip.novabia.dev/#market — curated comparables, buyer hypotheses and market caveats
+- https://eip.novabia.dev/#economics — interactive scenario calculations, waterfall and use-of-funds
+- https://eip.novabia.dev/#roadmap — 18-month milestones, measurable outputs and optionality
+- https://eip.novabia.dev/#tools — production toolkit, creative direction and AI provenance plans
+- https://eip.novabia.dev/#investors — investor opportunity, contact, returns, diligence and risk matrix
 
-- PC-first premium model.
-- **$14.99** working base-price hypothesis.
-- Approximately **$19.99** supporter-edition hypothesis with non-pay-to-win additions.
-- Regional pricing rather than one straight-FX global price.
-- Commercial scenarios: **25K / 50K / 100K** paid units, clearly labelled as scenarios rather than forecasts.
-- External market context for global games, PC, Steam premium revenue, indie breakout titles and creature-collecting comparable evidence.
+Nested anchor links work via the client router: `#comparable-basket`, `#market-methodology`, `#validation-gates`, `#ai-transparency`, `#return-scenarios`, `#risk-register`.
 
-### Validation KPIs
+**QR rule:** For detailed investor information, route QR codes to the relevant EIP tab; the final investor/contact call-to-action should use `https://eip.novabia.dev/#investors`. Do not label `play.novabia.dev` as the investor-information destination.
 
-The portal distinguishes measurable KPIs from results that do not yet exist.
+## Editorial and financial accuracy
 
-Player and commercial research will measure:
-- vertical-slice completion;
-- repeat play;
-- companion attachment;
-- evolution-path curiosity;
-- Steam visits and wishlists;
-- cost per qualified visitor / wishlist;
-- demo conversion;
-- willingness to pay;
-- geographic response;
-- production velocity;
-- burn versus output;
-- support workload.
+- **Player problem:** the working Ahmed persona seeks an emotionally memorable companion relationship, compelling gameplay and stories. He is a *hypothesis*, not a surveyed representative sample.
+- **Differentiator:** Heir/Tutor Stage 3 mechanics; the Heir retains identity while a Tutor from a different provincial branch transfers learned adaptation. Avoid describing this as physical fusion.
+- **Market comparables:** a deliberately curated basket of ten adjacent indie Steam titles. VGI/Sensor Tower *estimated Steam paid units* are not audited publisher results. The ~77.7K basket median is **not a market median or Novabia forecast**. Do not mix Cassette Beasts' reported 1.1M+ cross-platform milestone into Steam-only figures.
+- **Working pricing:** **$19.99** Standard US list-price hypothesis; roughly **$24.99** Supporter hypothesis, with non-pay-to-win extras. Selected-basket price average $20.49 and median $19.99. Regional pricing and discounts may change achieved revenue.
+- **Planned architecture:** 37 roads, 132 companions, 8 wider-design character roles (**6 selectable origin avatars, 2 non-selectable Fantasy story roles**). Do not imply all are already playable.
+- **External metrics:** no externally validated completion, retention, wishlist-to-sale conversion, paid-user acquisition cost or willingness-to-pay metrics yet. Never fabricate traction or testimonials.
 
-The funded phase is intended to determine **how large Novabia's opportunity can become and where resources should be focused to expand that potential**, rather than produce a binary yes/no validation result.
+### Funding and illustrations
 
-### 18-month production roadmap
+Up to **$100,000** for an approximately **18-month** staged program:
+- Core team and coworking $24,300.
+- Incorporation/setup $10,000.
+- Marketing and commercial validation $25,000.
+- Specialist visual/audio/UI/animation work $10,000.
+- Company-owned hardware, tools and accounts $11,500.
+- QA, research and localization $5,000.
+- Legal, accounting and compliance $2,500.
+- Working-capital and commercialization reserve $11,700.
 
-1. Months 0–3 — incorporate, recruit, equip the studio and polish the vertical slice.
-2. Months 3–6 — external player research.
-3. Months 6–9 — commercial validation and Steam/wishlist testing.
-4. Months 9–12 — scale the strongest player and market signals.
-5. Month 12 — begin the next financing process roughly six months before runway end.
-6. Months 12–18 — production, QA, localization, marketing and launch-readiness.
+Preferred *negotiable* starting point: **50% of contractually-defined Net Receipts** until cumulative investor distributions equal **2×** invested capital; then **20%** until cumulative distributions reach **5×**. It is not equity ownership or a guaranteed return.
 
-Planned content architecture remains **37 roads, 8 playable characters and 132 companions**, but content is scaled after validation rather than completed blindly beforehand.
+With $100K invested, $19.99 list price, 5% refunds, 30% platform share and **excluding** discounts, regional pricing, taxes, operating costs and additional deductions:
+- 30K units → approximately $199.4K distributed (**~2×**).
+- ~78K units (selected peer-basket median) → about $327.4K (**~3.3×**).
+- 150K units → capped at $500K (**5×**).
+- The approximate exact thresholds are 30,091 paid units for 2× and 142,929 for 5× in this simplified model.
 
-### Up-to-$100K use of funds
+These are illustrative investment calculations, **not sales forecasts**. Additional financing, future projects and preferred negotiation opportunities require separately agreed terms.
 
-- Core team, founder & coworking — **$24,300**
-- Company incorporation & setup — **$10,000**
-- Marketing & commercial validation — **$25,000**
-- VFX / UI / animation / audio / specialists — **$10,000**
-- Company-owned hardware, AI & production tools — **$11,500**
-- QA, external testing & localization — **$5,000**
-- Legal, accounting & compliance — **$2,500**
-- Working-capital / commercialization reserve — **$11,700**
+## Measurement gates and risks
 
-**Maximum raise: $100,000**
+The roadmap intentionally establishes baselines before selecting specific conversion targets:
+- Months 0–3: instrumented end-to-end slice, recruitment and production workflow.
+- Months 3–6: early external player cohort and friction/attachment report.
+- Months 6–9: Steam presence, acquisition experiments and attributed wishlist cost.
+- Months 9–12: production-velocity and content cost data; concentrate on strongest evidence.
+- Month 12: updated data room and financing discussion ahead of remaining runway.
+- Months 12–18: QA, localization, community building and launch-readiness decision.
 
-The founder does not intend to accept capital that cannot be deployed productively.
+Risks disclosed: Steam discoverability, differentiated player attachment, founder dependency, production economics, AI-generated asset rights, commercial conversion and financing runway. A risk response is a mitigation plan, not evidence the risk has disappeared.
 
-### Core monthly team plan
+### AI-assisted production
 
-- Founder / lead developer — **$500/month**
-- Two graphic designers — **$400/month combined**
-- Writer — **$200/month**
-- Marketing / community — **$150/month**
-- Weekly coworking — **$100/month**
+This project combines human-led creative work and AI-assisted workflows. Responsible personnel must track intended commercial assets, licenses, sources, use conditions and third-party rights; replace material that cannot be cleared and comply with storefront disclosure rules. **Do not describe a comprehensive asset audit as complete until one actually is.**
 
-Total: **$1,350/month**, or **$24,300 over 18 months**.
+Preserve player-facing origin symbols:
+- Elemental: `icon-water.png`
+- Kinetic: `icon-fist.png`
+- Landscape: `icon-landscape.png`
 
-Company-funded laptops, drawing tablets, storage, test devices and production accounts remain company assets.
+A province emblem and an Honor Medal reward are **not** the same thing as these origin identity symbols. The explanatory HTML comment lives above the origin cards in `index.html`.
 
-### Marketing allocation
+## Source files
 
-- Research & creative testing — **$3,000**
-- Playtest recruitment — **$2,000**
-- Trailer, store assets & creatives — **$4,000**
-- Steam wishlist acquisition experiments — **$5,000**
-- Creators, influencers & PR — **$4,000**
-- Demo / launch campaigns — **$5,000**
-- Performance reallocation reserve — **$2,000**
+- `index.html`: Seven-tab investor content, scenarios, risk register and contact.
+- `styles.css`: Base design system.
+- `revision.css`: Subsequent updates and responsive layouts.
+- `script.js`: Tab/deep-link routing, illustrative economy calculator, evolution prototype and print action.
+- `robots.txt`, `sitemap.xml`: Crawl discovery for **eip.novabia.dev only**.
+- `CNAME`: Host binding for GitHub Pages.
+- `favicon.png`: Brand icon.
 
-Total: **$25,000**
+The EIP site uses one static HTML document; its `#` fragments share the same canonical URL. Do not add fragment URLs to the sitemap. A future conversion to independent pages would need separately rendered HTML and metadata, just as the main site now has.
 
-### Preferred financing discussion
+## Publishing and change checklist
 
-The current founder proposal is a negotiable project-finance starting point:
+1. Back up the current `main` branch before significant edits.
+2. Update all repeated values consistently (price, unit labels, salary and fund allocation, contact information).
+3. Keep the **10-slide live pitch** separate from this longer investor portal and its optional five supporting slides.
+4. Confirm the ten-title basket appears once, price basket appears once, correct artwork loads, and the waterfall matches the assumptions.
+5. Test direct `/#... ` URLs, deep links, mobile and interactive calculator values; distinguish the published website from the Godot build.
+6. Submit `https://eip.novabia.dev/sitemap.xml` independently through Search Console as appropriate; a Domain Property can cover the subdomain.
+7. Do not silently upgrade planned concepts, projected reach or scenario figures into factual traction.
 
-- up to **$100K**;
-- **50% of defined Net Receipts until 2× invested capital**;
-- then **20% of defined Net Receipts until 5× cumulative investor distributions**;
-- open to alternative structures that fairly balance investor risk and the scope financed;
-- future standalone Novabia games, 4X projects, animation/film and other major IP expansions require new capital and new terms;
-- a successful first investor may receive a right of first negotiation for future financing opportunities.
-
-All investment terms require a separate written agreement and professional legal/financial review.
-
-## Preserved pre-revision site
-
-The complete site immediately before this major revision is preserved on the Git branch:
-
-`backup/pre-major-eip-revision-2026-10-27`
-
-This makes before/after comparison possible without losing the original public portal.
-
-## Project structure
-
-- `index.html` — primary investor-portal content.
-- `styles.css` — original visual system and responsive layout.
-- `revision.css` — styles introduced by the October 27 investor revision.
-- `script.js` — hash navigation, evolution demo, economics calculator and print action.
-- `favicon.png` — Novabia seal.
-- `CNAME` — `eip.novabia.dev`.
-- `robots.txt`, `sitemap.xml` — search metadata.
-
-## Development toolkit tab
-
-The public production toolkit lists the 19 creator-reported tools:
-ChatGPT, Codex, Gemini, Antigravity, Claude, Meta AI, Muse, DeepSeek, Microsoft Paint, Adobe Photoshop, Inkscape, Aseprite, LibreSprite, Godot, Audacity, Grammarly, GitHub, Microsoft Word and Microsoft Excel.
-
-The list describes the working toolkit and does not imply sponsorship or partnership by tool providers.
-
-## Important
-
-The portal is an early-stage investor communication resource. It does not constitute an offer to sell securities, financial advice, a guaranteed valuation, a promise of returns or evidence of past commercial performance.
+**Backup examples:** `backup/pre-major-eip-revision-2026-10-27`, `backup/pre-investor-diligence-update-2026-10-30`, `backup/pre-persona-and-return-rebalance-2026-10-30`.
 
 © 2026 Novabia. All rights reserved.
