@@ -167,3 +167,29 @@
 @media(max-width:1000px){.diligence-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.methodology-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:700px){.diligence-grid,.methodology-grid{grid-template-columns:1fr}.diligence-section{padding:30px 0 55px}.risk-row,.risk-row.risk-head{grid-template-columns:1fr;gap:8px}.risk-row.risk-head{display:none}.risk-row{padding:17px}.risk-row>strong{font-size:14px}.methodology-panel{padding:18px}.diligence-nav{margin-top:0}}
 @media print{.diligence-grid{grid-template-columns:repeat(2,1fr)}.risk-row{break-inside:avoid}.risk-row,.methodology-panel,.diligence-grid article{background:#fff!important;color:#111!important;border-color:#ccc!important}.risk-row p,.diligence-grid article p{color:#333!important}}
+
+/* Persona placement and investor returns balance */
+.product-persona-header{padding:5px 0 20px}
+.product-persona-header .eyebrow{margin-bottom:12px}
+.product-persona-header h2{margin-bottom:10px}
+.product-persona-grid{margin-bottom:54px}
+.returns-section{padding:4px 0 34px}
+.returns-section .section-intro{max-width:820px;margin-bottom:24px}
+.returns-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.return-card{background:linear-gradient(150deg,#182737,#0b1725);border:1px solid var(--border);padding:28px 24px;min-width:0;position:relative}
+.return-card-highlight{border-color:var(--borderstrong);background:radial-gradient(ellipse at 35% 0%,rgba(219,174,103,.12),transparent 66%),linear-gradient(150deg,#202b38,#0b1725)}
+.return-card-highlight:before{content:"";position:absolute;top:0;left:0;width:90px;height:2px;background:var(--gold)}
+.return-card .number-label{display:block;min-height:28px}
+.return-multiple{display:block;color:#edcd8e;font:600 clamp(42px,5.5vw,70px)/1.15 Cinzel,serif;letter-spacing:-.055em;margin:15px 0 8px}
+.return-units{color:#e9e5da;font-size:13px;margin:7px 0 8px}
+.return-units strong{font-size:19px;color:#fff}
+.return-receipts{color:#aebed0;font-size:12px;line-height:1.7;margin:0}
+.return-terms{border:1px solid rgba(230,190,116,.23);background:rgba(203,155,81,.07);padding:20px 23px;margin-top:17px;display:flex;justify-content:space-between;align-items:center;gap:22px}
+.return-terms div{font-size:12px;line-height:1.75;color:#c3ccd8;max-width:820px}
+.return-terms strong{color:#eed3a2}
+.return-terms a{flex-shrink:0;color:var(--gold);font-size:11px;font-weight:800;text-decoration:none;border-bottom:1px solid var(--gold2)}
+.returns-section>.fineprint{line-height:1.85;max-width:1050px}
+.returns-section>.fineprint a{color:#d9b77c}
+#player-persona,#return-scenarios{scroll-margin-top:115px}
+@media(max-width:850px){.returns-grid{grid-template-columns:1fr}.return-card{padding:23px}.return-card .number-label{min-height:0}.return-multiple{font-size:48px}.return-terms{flex-direction:column;align-items:start}}
+@media print{.return-card,.return-terms{background:#fff!important;color:#111!important;border-color:#bbb!important;break-inside:avoid}.return-card p{color:#333!important}}
