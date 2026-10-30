@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://eip.novabia.dev/</loc></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://eip.novabia.dev/</loc></url>
+  <url><loc>https://eip.novabia.dev/product/</loc></url>
+  <url><loc>https://eip.novabia.dev/market/</loc></url>
+  <url><loc>https://eip.novabia.dev/economics/</loc></url>
+  <url><loc>https://eip.novabia.dev/roadmap/</loc></url>
+  <url><loc>https://eip.novabia.dev/tools/</loc></url>
+  <url><loc>https://eip.novabia.dev/investors/</loc></url>
+</urlset>
