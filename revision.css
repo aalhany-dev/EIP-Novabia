@@ -193,3 +193,46 @@
 #player-persona,#return-scenarios{scroll-margin-top:115px}
 @media(max-width:850px){.returns-grid{grid-template-columns:1fr}.return-card{padding:23px}.return-card .number-label{min-height:0}.return-multiple{font-size:48px}.return-terms{flex-direction:column;align-items:start}}
 @media print{.return-card,.return-terms{background:#fff!important;color:#111!important;border-color:#bbb!important;break-inside:avoid}.return-card p{color:#333!important}}
+
+/* Four-envelope EIP funds explanation — 31 October 2026 */
+#funding-allocation,#setup-breakdown,#production-ownership{scroll-margin-top:112px}
+.fund-detail-wrap{border:1px solid var(--border);background:#0c1622;overflow:hidden}
+.fund-detail-table{width:100%;border-collapse:collapse;table-layout:fixed;text-align:left}
+.fund-detail-table thead{background:#132234}
+.fund-detail-table thead th{padding:13px 18px;font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:#dec28c;font-weight:800}
+.fund-detail-table th:first-child{width:28%}
+.fund-detail-table th:nth-child(2){width:14%}
+.fund-detail-table th:nth-child(3){width:58%}
+.fund-detail-table td,.fund-detail-table tbody th{vertical-align:top;padding:17px 18px;border-top:1px solid var(--border);font-size:12px;line-height:1.78;color:#b9c6d5}
+.fund-detail-table tbody th{font-size:13px;font-weight:750;color:#e7dac4}
+.fund-detail-table tbody td:nth-child(2){white-space:nowrap;font-weight:800;color:#edd4a2;font-size:14px}
+.fund-detail-table tbody td strong{color:#eadabf}
+.fund-detail-table tr.fund-total{background:rgba(220,183,120,.085)}
+.fund-detail-table tr.fund-total th,.fund-detail-table tr.fund-total td{font-weight:800;color:#edd4a2}
+.fund-subheading{margin-top:48px}
+.fund-subheading .eyebrow{margin-bottom:13px}
+.ownership-table th:first-child{width:26%}
+.ownership-table th:nth-child(2){width:24%}
+.ownership-table th:nth-child(3){width:50%}
+.ownership-table tbody td:nth-child(2){white-space:normal;font-size:12px;color:#e1c99e}
+.fund-detail-table tbody tr:not(.fund-total):hover{background:rgba(219,174,103,.035)}
+@media(max-width:700px){
+  .fund-detail-table,.fund-detail-table tbody,.fund-detail-table tr,.fund-detail-table tbody th,.fund-detail-table tbody td{display:block;width:100%}
+  .fund-detail-table thead{display:none}
+  .fund-detail-table tbody tr{padding:17px 18px;border-top:1px solid var(--border)}
+  .fund-detail-table tbody tr:first-child{border-top:0}
+  .fund-detail-table tbody th,.fund-detail-table tbody td{padding:0;border:0}
+  .fund-detail-table tbody th{margin-bottom:7px}
+  .fund-detail-table tbody td:nth-child(2){font-size:15px;margin-bottom:9px}
+  .fund-detail-table tbody td:nth-child(3){font-size:12px}
+  .fund-detail-table tbody td:nth-child(2)::before{content:attr(data-label) ": ";font-size:10px;color:#8294a8;text-transform:uppercase;letter-spacing:.06em}
+  .fund-detail-table tr.fund-total td:nth-child(2)::before{content:none}
+  .fund-subheading{margin-top:35px}
+}
+@media print{
+  .fund-detail-wrap{background:#fff!important;border-color:#bbb!important}
+  .fund-detail-table thead{background:#eee!important}
+  .fund-detail-table th,.fund-detail-table td{color:#111!important;border-color:#ddd!important}
+  .fund-detail-table tr{break-inside:avoid}
+  .fund-detail-table tr.fund-total{background:#eee!important}
+}
